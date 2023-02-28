@@ -1,7 +1,23 @@
 #include <iostream> 
-void functionName( "v-Type" x , "v-Type" y){ // "v-Type" if there is an output. 
+int num_count (int array[] , int n, int number){ 
     
-    //body
+   int number_count = 0
     
-return 0 // return "v-Type" z 
+    if (n < 1){
+        
+        //Retain number_count at 0 if n < 1 
+
+        else if (n >= 1){
+
+            for(int i = 0 ; i < n ; i++){
+                
+                if (array[i] == number){
+                    number_count++;
+                }
+                
+            }
+        }
+    }
+
+    return number_count
 }

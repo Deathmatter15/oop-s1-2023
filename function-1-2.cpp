@@ -1,7 +1,28 @@
 #include <iostream> 
-void functionName( "v-Type" x , "v-Type" y){ // "v-Type" if there is an output. 
+// Add all elements into a parameter
+// Convert parameter to floating variable type 
+// Find the avg of the element sum
+double array_mean (int array[] , int n) {
     
-    //body
+    int array_sum = 0;
+    double array_avg = 0.0
     
-return 0 // return "v-Type" z 
+    if(n < 1)
+    {
+        //Keep array_sum = 0
+
+        else if(n >= 1)
+        {
+            
+            for(int i = 0 ; i < n ; i++)
+            {
+               array_sum += array[i]
+                
+            }
+            double array_avg = (double)array_sum/n
+        }
+
+    }
+    
+    return elementAvg
 }
