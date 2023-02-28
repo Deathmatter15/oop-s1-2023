@@ -1,4 +1,5 @@
 #include <iostream> 
+
 int num_count (int array[] , int n, int number){ 
     
    int number_count = 0
