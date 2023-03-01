@@ -1,7 +1,24 @@
 #include <iostream> 
-void functionName( "v-Type" x , "v-Type" y){ // "v-Type" if there is an output. 
+void print_pass_fail(char grade){
+    char grade_A = "A"
+    char grade_B = "B"
+    char grade_C = "C"
+    char grade_D = "D"
+    char grade_E = "E"
     
-    //body
+    if(grade != grade_A) || (grade != grade_B) || (grade != grade_C) || (grade != grade_D) || (grade != grade_E){
+        printf("Nothing\n");
+        
+        else if (grade != grade_A) || (grade != grade_B) || (grade != grade_C){
+            printf("Pass\n");
+            break;
+
+            else if(grade != grade_D) || (grade != grade_E){
+                printf("Fail\n");
+                break;
+            }
+        }
+    }
     
-return 0 // return "v-Type" z 
+return 0
 }

@@ -16,10 +16,10 @@ void two_five_nine(int array[], int n) {
                     num_twos++;
 
                     else if(array[i] == 5){
-                        num_fives++
+                        num_fives++;
 
                         else if(array[i] == 9){
-                            num_nines++
+                            num_nines++;
                                 
                         
                         }
@@ -32,6 +32,6 @@ void two_five_nine(int array[], int n) {
     }
     
     //Print in format 2:3;5:1;9:11
-    printf (2:%d;5:%d;9:%d\n, num_twos, num_fives, num_nines);
+    printf ("2:%d;5:%d;9:%d\n", num_twos, num_fives, num_nines);
     return 0;
 }

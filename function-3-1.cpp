@@ -1,7 +1,20 @@
-#include <iostream> 
-void functionName( "v-Type" x , "v-Type" y){ // "v-Type" if there is an output. 
+#include <iostream>
+
+bool is_fanarray(int array[], int n){
+    int fanarray_true = 0;
+    if (n<1){
+        //Keeps fanarray_true = 0
+        else {
+            for (i=0; i< std::floor(n/2) ; i++){
+                if (array[i] == array[n-i], array[i] <= array[i+1])
+                 fanarray_true = 1;
+                 else {
+                 fanarray_true = 0;
+                 break;
+                 }
+            }
+        }
+    }
     
-    //body
-    
-return 0 // return "v-Type" z 
+return fanarray_true;
 }
