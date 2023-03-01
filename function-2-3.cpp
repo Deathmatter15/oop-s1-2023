@@ -29,7 +29,7 @@ void two_five_nine(int array[], int n) {
         }
                 
     }
-    printf ("2:%d;5:%d;9:%d\n", num_twos, num_fives, num_nines);
+    printf ("2:%d;5:%d;9:%d;\n", num_twos, num_fives, num_nines);
     
     return;
 }
