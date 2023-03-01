@@ -5,24 +5,26 @@ bool is_descending(int array[], int n){
     int array_previous_element = 0; 
     if (n == 0){
         //keeps array_decend = 0; 
+    }
 
-        else {
+    else {
             array_previous_element = array[0];
             
-            for (i = 1; i < n; i++ ) {
-                if (array[i] < array_previous_element){
-                array_previous_element = array[i];
-                 array_decend = 1;
-
-                    else {
-                     array_decend = 0;
-                     break;
+        for (int i = 1; i < n; i++ ) {
         
-                    }
-                }
+            if (array[i] < array_previous_element){
+                array_previous_element = array[i];
+                array_decend = 1;
             }
+            else {
+                array_decend = 0;
+                break;
+        
+            }
+            
         }
     }
+    
     
     return array_decend; 
 }
