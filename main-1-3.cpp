@@ -1,6 +1,6 @@
 #include <iostream> 
 
-extern int num_count (int array[] , int n, int number)
+extern int num_count (int array[] , int n, int number);
 
 int main (){
     int array_test[7] = {1,2,5,1,1,2,7};

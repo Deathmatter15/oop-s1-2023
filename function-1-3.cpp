@@ -2,7 +2,7 @@
 
 int num_count (int array[] , int n, int number){ 
     
-   int number_count = 0
+   int number_count = 0;
     
     if (n < 1){
         
