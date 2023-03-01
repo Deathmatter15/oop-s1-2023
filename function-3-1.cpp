@@ -1,20 +1,24 @@
 #include <iostream>
+#include <cmath>
 
 bool is_fanarray(int array[], int n){
-    int fanarray_true = 0;
+    int array_fan_true = 0;
+    int length_array_half = std::floor(n/2);
+    
     if (n<1){
-        //Keeps fanarray_true = 0
-        else {
-            for (i=0; i< std::floor(n/2) ; i++){
-                if (array[i] == array[n-i], array[i] <= array[i+1])
-                 fanarray_true = 1;
-                 else {
-                 fanarray_true = 0;
-                 break;
-                 }
+        //Keeps array_fan_true = 0
+    }
+    else {
+        for (int i=0; i < length_array_half ; i++){
+            if (array[i] == array[n-i] && array[i] <= array[i+1]){
+                array_fan_true = 1;
+            }
+            else {
+                array_fan_true = 0;
+                break;
             }
         }
     }
     
-return fanarray_true;
+return array_fan_true;
 }
