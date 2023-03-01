@@ -16,8 +16,8 @@ bool is_ascending(int array[], int n) {
 
                     else {
                      array_acsend = 0;
-
                      break;
+                     
                     }
                 }
             }
