@@ -17,8 +17,9 @@ else if (n >= 1){
         array_sum = array_sum + array[i];
                 
     }
-    
-    array_avg = static_cast<double>(array_sum/n);
 }
+
+    array_avg = static_cast<double>array_sum/n;
+    array_avg = array_avg/n;
     return array_avg;
 }
