@@ -8,14 +8,16 @@ int array_sum (int array[] , int n){
     if (n < 1){
         //Keep array_sum = 0
 
-        else if (n >= 1){
+    }
+    
+    else if (n >= 1){
 
-            for (int i = 0 ; i < n ; i++){
-                array_sum += array[i];
+        for (int i = 0 ; i < n ; i++){
+            array_sum += array[i];
 
-            }
         }
     }
+    
 
-    return array_sum // return "z" 
+    return array_sum; // return "z" 
 }
