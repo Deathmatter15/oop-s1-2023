@@ -13,3 +13,4 @@ int main() {
     std::cout << is_fanarray(array_fanFalse, 0) << "\n";
 
     return 0;
+}

@@ -10,7 +10,7 @@ bool is_fanarray(int array[], int n){
     }
     else {
         for (int i=0; i < length_array_half ; i++){
-            if (array[i] == array[n-i] && array[i] <= array[i+1]){
+            if (array[i] == array[n-1-i] && array[i] <= array[i+1]){
                 array_fan_true = 1;
             }
             else {
