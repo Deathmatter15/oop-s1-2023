@@ -3,4 +3,4 @@
 9/8  = 1 r 1 
 1/8  = 0 r 1 
 
-Base8 of decimal is 113
+Base 8 of decimal is 113

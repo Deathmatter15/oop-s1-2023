@@ -10,4 +10,4 @@ Converting to base2
  1/2 =  0 r 1
 
  therefore base2 of 75 is //Reverse order
- 1001011
+ 1001011 
