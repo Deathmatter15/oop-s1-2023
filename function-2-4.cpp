@@ -5,6 +5,7 @@ int sum_min_max(int integers[], int length){
     int maxmin_sum = -1, minimum_element = integers[0], max_element = integers[0];
     
     if(length > 0){   
+        
         for (int i = 1; i < length; i++){
             if(integers[i] < minimum_element){
                 minimum_element = integers[i];
@@ -12,7 +13,7 @@ int sum_min_max(int integers[], int length){
         }
 
         for (int i = 1; i < length; i++){
-            if(integers[i] > minimum_element){
+            if(integers[i] > max_element){
                 max_element = integers[i];
             }
         }
