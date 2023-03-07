@@ -1,4 +1,3 @@
-#include <iostream> 
 //Library of useful commands; reminder
 
 //loops while condtition is fulfilled. 
@@ -6,8 +5,10 @@ while(){
     //body
 }
 
-//
-
+//converts string to int 
+#include<string>
+std::string s;
+int a = std::stoi(s); 
 
 // Library of commonly used sequences; easily copied and pasted. 
 
