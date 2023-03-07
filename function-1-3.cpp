@@ -29,7 +29,7 @@ void count_digits(int array[4][4]){ // "v-Type" if there is an output.
         }
     }
     
-    std::cout << "1:" << count_1 << ";" << "2:" << count_2 << ";" << "3:" << count_3 << ";" << "4:" << count_4 << ";"
+    std::cout << "0:" << count_0 << "1:" << count_1 << ";" << "2:" << count_2 << ";" << "3:" << count_3 << ";" << "4:" << count_4 << ";"
      << "5:" << count_5 << ";" << "6:" << count_6 << ";" << "7:" << count_7 << ";" << "8:" << count_8 << ";" << "9:" << count_9 << ";"
      <<std::endl;
     return;
