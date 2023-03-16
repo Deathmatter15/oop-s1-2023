@@ -9,7 +9,7 @@ bool is_array_palindrome(int integers[], int length) {
                 palindrome_switch = 1;
             }else{
                 palindrome_switch = -2;
-             break;
+                break;
             }
         }
     
@@ -18,9 +18,9 @@ bool is_array_palindrome(int integers[], int length) {
 }
 
 int palindrome_sum(int integers[], int length) {
-    int palindrome_sum = -1; 
+    int palindrome_sum = 0; 
     if(length <= 0){
-        
+        int palindrome_sum = -1;
     }else if(is_array_palindrome(integers, length) > 0){
     for (int i = 0; i< length; i++){
         palindrome_sum += integers[i];
