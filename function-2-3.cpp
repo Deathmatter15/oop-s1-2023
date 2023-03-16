@@ -21,10 +21,12 @@ int palindrome_sum(int integers[], int length) {
     int palindrome_sum = 0; 
     if(length <= 0){
         int palindrome_sum = -1;
+
     }else if(is_array_palindrome(integers, length) > 0){
-    for (int i = 0; i< length; i++){
-        palindrome_sum += integers[i];
-    }
+        for (int i = 0; i< length; i++){
+            palindrome_sum += integers[i];
+        }
+
     }else{
         palindrome_sum = -2;
     }
@@ -32,9 +34,9 @@ int palindrome_sum(int integers[], int length) {
 }
 
 int sum_integers(int integers[], int length) {
-    int element_sum = -2; 
+    int element_sum = 0; 
     if(length <= 0){
-        
+        int element_sum = -2
     }else{
     for (int i = 0; i< length; i++){
         element_sum += integers[i];
