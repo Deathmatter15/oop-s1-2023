@@ -36,7 +36,7 @@ int palindrome_sum(int integers[], int length) {
 int sum_integers(int integers[], int length) {
     int element_sum = 0; 
     if(length <= 0){
-        int element_sum = -2
+        int element_sum = -2;
     }else{
     for (int i = 0; i< length; i++){
         element_sum += integers[i];
