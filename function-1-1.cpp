@@ -1,7 +1,7 @@
 #include <iostream>
 
 int *readNumber() { 
-    static int array[10]; 
+    int *array = new int[10]; 
     for( int i = 0; i < 10; i++){
     std::cout << "Enter the value of element " << i << ": ";
     std::cin >> array[i];
