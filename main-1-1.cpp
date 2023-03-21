@@ -1,5 +1,5 @@
 #include <iostream> 
-extern int *readNumber();
+extern int *readNumbers();
 extern void printNumbers(int *numbers, int length);
 using namespace std; 
 
