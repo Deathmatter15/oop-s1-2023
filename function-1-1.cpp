@@ -3,7 +3,7 @@
 int *readNumbers() { 
     int *array = new int[10]; 
     for( int i = 0; i < 10; i++){
-    std::cout << "Enter the value of element " << i << ": ";
+    std::cout << i;
     std::cin >> array[i];
     }
     return array;
