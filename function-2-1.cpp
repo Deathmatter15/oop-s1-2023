@@ -20,7 +20,7 @@ void printNumbers(int *numbers, int length){
 void hexDigits(int *numbers, int length){
     for( int i = 0; i< length; i++){
         std::cout << i << " " << numbers[i] << " "; 
-
+        //Why does std::endl break the output from each case?
         switch(numbers[i]) {
           case 0: 
                 std::cout << 0;
