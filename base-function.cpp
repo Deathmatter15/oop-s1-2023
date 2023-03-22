@@ -1,5 +1,24 @@
-void hexDigits(int *numbers, int length){
+#include <iostream>
 
+int *readNumbers() { 
+    int *array = new int[10]; 
+
+    for( int i = 0; i < 10; i++){
+        std::cin >> array[i];
+    }
+    return array;
+}
+
+void printNumbers(int *numbers, int length){
+    for( int i = 0; i < length; i++ ){
+        std::cout << i << " " << numbers[i] << std::endl; 
+    }
+    return;
+}
+
+//Test-2-1 inputs 11, 12, 3, 4, 15, 6, 7, 8, 9, 10
+
+void hexDigits(int *numbers, int length){
     for( int i = 0; i< length; i++){
         std::cout << i << " " << numbers[i] << " "; 
 
