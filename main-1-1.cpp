@@ -6,6 +6,6 @@ using namespace std;
 int main() { 
     int *numbers = readNumbers();
     printNumbers(numbers, 10);
-    delete numbers;
+    delete[] numbers;
     return 0;
 }
