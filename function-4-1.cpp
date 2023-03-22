@@ -11,23 +11,41 @@ int *readNumbers() {
 }
 
 int secondSmallestSum(int *numbers,int length) {
-    int 
-    for( i = 0; i < length; i++){
-        for(j = i; j < j+i; j++){
+    int sum = 0, base = 0; 
 
+    for(int i = 0; i < length; i++){
+        for (int j = i + 1; j <= length; j++){
+            sum = 0;
+
+            for (int k = i; k < j; k++){
+                sum += numbers[k];
+            }
+
+            if(j == 1){
+            base = sum; 
+            } else if (base > sum) {
+            base = sum;
+            }
         }
     }
 
-    for( i = 1; i < length; i++){
-        for(j = 0; j < length - i; j++){
+    int sumsecondsmallest = 0; 
 
+    for(int i = 0; i < length; i++){
+        for (int j = i + 1; j <= length; j++){
+            sum = 0;
+
+            for (int k = i; k < j; k++){
+                sum += numbers[k];
+            }
+
+            if(j == 1 || sumsecondsmallest == base){
+                sumsecondsmallest = sum; 
+            } else if (sum > base && sumsecondsmallest > sum) {
+            sumsecondsmallest = sum;
+            }
         }
     }
-}
 
-#include <vector>
-#include <algorithm>
-
-int secondSmallestSum(int *numbers,int length) {
-
+    return sumsecondsmallest; 
 }
