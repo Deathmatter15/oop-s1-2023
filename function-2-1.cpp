@@ -39,10 +39,10 @@ void hexDigits(int *numbers, int length){
 
             default:
                 char c='A'+ (numbers[i]-10);
-                cout<<c;
+                std::cout<<c;
 
         }
-        cout<<endl;
+        std::cout<<std::endl;
 
     }
 }
