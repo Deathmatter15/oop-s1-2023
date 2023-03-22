@@ -1,11 +1,11 @@
 #include <iostream> 
-extern int *readNumber();
+extern int *readNumbers();
 extern void printNumbers(int *numbers, int length);
 extern void hexDigits(int *numbers, int length);
 using namespace std; 
 
 int main() { 
-    int *numbers = readNumber(); 
+    int *numbers = readNumbers(); 
     hexDigits(numbers, 10);
     delete[] numbers;
     return 0;
