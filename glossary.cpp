@@ -5,6 +5,12 @@ while(){
     //body
 }
 
+//while loop replace for. Preferred when iterations not known in advance.
+int i = 0;
+while (i < 5) {
+    std::cout << i << std::endl;
+    i++;
+}
 //converts string to int 
 #include<string>
 std::string s;

@@ -1,4 +1,4 @@
-#ifndef someNameHere
-#define someNameHere
-    //Body
+#ifndef UNIQUE-Name-Here
+#define UNIQUE-Name-Here
+    
 #endif
