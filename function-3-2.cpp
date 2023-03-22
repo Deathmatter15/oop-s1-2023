@@ -17,14 +17,14 @@ void printNumbers(int *numbers, int length){
     return;
 }
 
-int* equalsArray(int *numbers, int length){
+int *reverseArray(int *numbers, int length){
 
-    int *reverse_array = new int[length];
+    int *array_reversed = new int[length];
 
     for (int i = 0; i < length; i++){
-        reverse_array[i] = numbers[length-i-1];
+        array_reversed[i] = numbers[length-i-1];
     }
     
-return  reverse_array;
+return  array_reversed;
 }
     

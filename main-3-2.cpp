@@ -1,7 +1,7 @@
 #include <iostream> 
 extern int *readNumbers();
 extern void printNumbers(int *numbers, int length);
-extern int* reverseArray(int *numbers, int length);
+extern int *reverseArray(int *numbers, int length);
 using namespace std; 
 
 int main() { 
