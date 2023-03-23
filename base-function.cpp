@@ -1,9 +1,4 @@
-#include <iostream> 
-
-void functionName(){
-    
-return; 
-#include <iostream> 
+ #include <iostream> 
 #include ""
 
 void name(){
