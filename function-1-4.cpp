@@ -1,8 +1,22 @@
 #include <iostream> 
 #include "Person.h"
 
-PersonList shallowCreatePersonList(PersonList pl){
+PersonList createPersonList(int n){
     PersonList Book; 
-    Book = pl    
+    Book.people = new Person[n];
+    for (int i=0; i<n; i++) {
+        Book.people[i].name = "Jane Doe";
+        Book.people[i].age = 1;
+        Book.numPeople = n;  
+    }
+    return Book;
+}
+
+PersonList shallowCreatePersonList(PersonList pl){
+    PersonList Book;
+    
+    Book.people = pl.people;
+    Book.numPeople = pl.numPeople;  
+
     return Book;
 }
