@@ -8,7 +8,7 @@ int main(){
     PersonList newBook = createPersonList(3);
 
     PersonList deepNewBook; 
-    deepNewBook = deepCreatePersonList(newBook);
+    deepNewBook = deepCopyPersonList(newBook);
 
     for (int i=0; i<3 ; i++){
     cout << deepNewBook.people[i].name << " " << deepNewBook.people[i].age 
