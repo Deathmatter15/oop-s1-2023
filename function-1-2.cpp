@@ -2,10 +2,12 @@
 #include "Person.h"
 
 PersonList createPersonList(int n){
-    PersonList Book = new PersonList(n)
-    Person entity = new Person(n)
-    for (int i; i<0; i++) {
-     Book[i].people = "Jane Doe"
+    PersonList Book; 
+    Book.people = new Person[n];
+    for (int i=0; i<n; i++) {
+        Book.people[i].name = "Jane Doe";
+        Book.people[i].age = 1;
+        Book.numPeople = n;  
     }
-    return;
+    return Book;
 }
