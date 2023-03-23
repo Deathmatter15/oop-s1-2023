@@ -1,15 +1,20 @@
 #include <iostream> 
 #include "Person.h"
-extern PersonList createPersonList(int n); 
+extern PersonList deepCreatePersonList(PersonList pl); 
 using namespace std;
 
 int main(){
-    PersonList newBook = createPersonList(3); 
-    for (int i=0; i<3; i++){
-        cout << newBook.people[i].name << " " << newBook.people[i].age 
-        << " " << newBook.numPeople << endl;
-    }
+    PersonList newBook; 
+    newBook.people.name = "Jane Doe";
+    newBook.people.age = 1; 
+    newBook.numPeople = 3;
 
-    delete[] newBook.people;
+    PersonList deepNewBook; 
+    deepNewBook = deepCreatePersonList(newBook);
+
+    cout << deepNewBook.people.name << " " << deepNewBook.people.age 
+    << " " << deepNewBook.numPeople << endl;
+    
+    delete[] deepNewBook.people;
     return 0; 
 }
