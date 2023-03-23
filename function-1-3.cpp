@@ -12,7 +12,7 @@ PersonList createPersonList(int n){
     return Book;
 }
 
-PersonList deepCreatePersonList(PersonList pl){
+PersonList deepCopyPersonList(PersonList pl){
     PersonList Book; 
     Book.people = new Person[pl.numPeople];
 

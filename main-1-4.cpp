@@ -1,7 +1,7 @@
 #include <iostream> 
 #include "Person.h"
 extern PersonList createPersonList(int n);
-extern PersonList shallowCreatePersonList(PersonList pl); 
+extern PersonList shallowCopyPersonList(PersonList pl); 
 using namespace std;
 
 int main(){

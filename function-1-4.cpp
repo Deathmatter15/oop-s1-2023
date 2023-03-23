@@ -12,7 +12,7 @@ PersonList createPersonList(int n){
     return Book;
 }
 
-PersonList shallowCreatePersonList(PersonList pl){
+PersonList shallowCopyPersonList(PersonList pl){
     PersonList Book;
     
     Book.people = pl.people;
