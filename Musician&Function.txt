@@ -1,0 +1,31 @@
+//This is Musician.h
+#ifndef Musician 
+#define Musician
+end 
+ 
+#include <string>
+
+class Musician{
+
+private:
+
+public:
+std::string get_instrument;
+int get_experience;
+Musician(std::string get_instrument,int get_experience);
+};
+
+//This is the start of the function 
+#include <iostream> 
+#<Musician.h>
+
+Musician::Musician() {
+	get_instrument = "null";
+	get_experience = 0;
+}
+
+Musician::Musician(std::string instrument,int experience)
+
+Musician::std::string get_instrument
+
+Musician::int get_experience
