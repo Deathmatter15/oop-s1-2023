@@ -2,11 +2,19 @@
 #include "Musician.h"
 
 Musician::Musician(){
-    get_instrument = "null";
-    get_experience = 0; 
+    instrument = "null";
+    experience = 0; 
 }
 
 Musician::Musician(std::string instrument,int experience){
-    get_instrument = instrument;
-    get_experience = experience;
+    set_instrument(instrument);
+    set_experience(experience);
+}
+    
+std::string Musician::get_instrument(){
+    return instrument;
+}
+
+int Musician::get_experience(){
+    return experience;
 }
