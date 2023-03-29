@@ -10,7 +10,7 @@ Musician::Musician(std::string instrument,int experience){
     set_instrument(instrument);
     set_experience(experience);
 }
-    
+
 std::string Musician::get_instrument(){
     return instrument;
 }

@@ -1,24 +1,5 @@
 #include <iostream>
-#include "Musician.h"
 #include "Orchestra.h"
-
-Musician::Musician(){
-    instrument = "null";
-    experience = 0; 
-}
-
-Musician::Musician(std::string instrument,int experience){
-    set_instrument(instrument);
-    set_experience(experience);
-}
-
-std::string Musician::get_instrument(){
-    return instrument;
-}
-
-int Musician::get_experience(){
-    return experience;
-}
 
 Orchestra::Orchestra() {
     max_size = 0;
