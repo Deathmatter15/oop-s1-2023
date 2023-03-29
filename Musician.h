@@ -11,6 +11,7 @@ private:
 public:    
 
 Musician();
+
 Musician(std::string instrument,int experience);
 
 void set_instrument(std::string instrument_set) {
