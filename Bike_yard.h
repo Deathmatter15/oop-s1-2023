@@ -9,7 +9,7 @@
         public:
         int maxBikeCapacity;  
         int currentBikeCapacity; 
-        Bike *currentBikes = new Bike{0};
+        Bike *currentBikes = new Bike[0];
 
         Bike_yard();            // default constructor for yard with zero capacity
         Bike_yard(int capacity);   // constructor for yard that can hold "capacity" bikes
