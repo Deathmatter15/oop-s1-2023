@@ -5,7 +5,7 @@
     // default constructor for yard with zero capacity
     Bike_yard::Bike_yard(){
         maxBikeCapacity = 0;
-        currentBikeCapacity =0;
+        currentBikeCapacity = 0;
     }            
     
     // constructor for yard that can hold "capacity" bikes
@@ -37,7 +37,7 @@
     }; 
 
     bool Bike_yard::add_stock(Bike b) {
-        if(currentBikeCapacity >= maxBikeCapacity){
+        if(currentBikeCapacity <= maxBikeCapacity){
             currentBikes[currentBikeCapacity] = b;
             currentBikeCapacity++;
             return true;
