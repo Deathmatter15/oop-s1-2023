@@ -12,7 +12,7 @@
     Bike_yard::Bike_yard(int capacity) {
         maxBikeCapacity = capacity;
         currentBikeCapacity = 0; 
-        currentBikes = new Bike[capacity]; 
+        Bike*currentBikes = new Bike[capacity]; 
     }   
 
     // count of the current number of bikes in yard
