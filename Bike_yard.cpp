@@ -37,7 +37,7 @@
     }; 
 
     bool Bike_yard::add_stock(Bike b) {
-        if(currentBikeCapacity <= maxBikeCapacity){
+        if(currentBikeCapacity < maxBikeCapacity){
             currentBikes[currentBikeCapacity] = b;
             currentBikeCapacity++;
             return true;
