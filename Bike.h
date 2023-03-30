@@ -1,5 +1,5 @@
-#ifndef someNameHere
-#define someNameHere
+#ifndef ThirtyZeroBike
+#define ThirtyZeroBike
 
 #include <string>
 class Bike {
@@ -19,4 +19,5 @@ int get_code();
 
 ~Bike();
 };
+
 #endif
