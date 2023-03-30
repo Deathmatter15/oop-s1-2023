@@ -17,7 +17,7 @@ Bike(std::string brand, int code);
 std::string get_brand();           
 int get_code(); 
 
-
+~Bike();
 };
 
 #endif

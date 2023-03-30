@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Bike_yard.h"
-#include "Bike.h"
+
 
     // default constructor for yard with zero capacity
     Bike_yard::Bike_yard(){
@@ -12,7 +12,7 @@
     Bike_yard::Bike_yard(int capacity) {
         maxBikeCapacity = capacity;
         currentBikeCapacity = 0; 
-        Bike*currentBikes = new Bike[capacity]; 
+        currentBikes = new Bike[capacity];
     }   
 
     // count of the current number of bikes in yard
