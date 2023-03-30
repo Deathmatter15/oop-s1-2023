@@ -1,7 +1,6 @@
 #ifndef ThirtyBikeYard
 #define ThirtyBikeYard
 
-#include
 #include <string>
 
     class Bike_yard {

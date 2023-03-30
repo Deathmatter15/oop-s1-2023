@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Bike_yard.h"
-#include "Bike.h"
+
     // default constructor for yard with zero capacity
     Bike_yard::Bike_yard(){
         maxBikeCapacity = 0;
@@ -15,12 +15,12 @@
     }   
 
     // count of the current number of bikes in yard
-    int get_total_stock_count(){
+    int Bike_yard::get_total_stock_count(){
         return currentBikeCapacity;
     }  
 
     // count of the number of bikes with brand code equal to "code"
-    int get_stock_quantity(int code){
+    int Bike_yard::get_stock_quantity(int code){
         int code_match_counter = 0;
         for (int i=0; i<currentBikeCapacity: i++) {
             if(currentBikes[i].Bike_code == code) {
@@ -31,11 +31,11 @@
     }  
     
     // gets an array containing all the bikes in the yard
-    Bike *get_current_stock_list(){
+    Bike *Bike_yard::get_current_stock_list(){
         return *currentBikes;
     }; 
 
-    bool add_stock(Bike b) {
+    bool Bike_yard::add_stock(Bike b) {
         if(currentBikeCapacity >= maxBikeCapacity){
             currentBikes[currentBikeCapacity] = b;
             currentBikeCapacity++;
