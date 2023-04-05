@@ -1,6 +1,6 @@
 #ifndef WizardFiveOFour
 #define WizardFiveOFour
-#include "Player.h"
+#include "player.h"
 #include <string>
 
 class Wizard: public Player {

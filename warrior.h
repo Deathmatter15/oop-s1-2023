@@ -1,6 +1,6 @@
 #ifndef WarriorOFiveFour
 #define WarrioeOFiveFour
-#include "Player.h"
+#include "player.h"
 #include <string>
 
 class Warrior: public Player {
