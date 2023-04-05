@@ -37,8 +37,7 @@ void Player::attack(Player *opponent, int damage_output){
 };
 
 void Player::takeDamage(int damage_taken){
-    int current_health = getHealth() - damage_taken;
-    setHealth(current_health);
+    std::cout << name << " takes " << damage << " damage. Remaining health: " << health << "\n";
 };
 
 Wizard::Wizard(std::string base_name, int base_health, int base_damage, int base_mana) : Player(base_name, base_health, base_damage) {
@@ -51,9 +50,13 @@ Warrior::Warrior(std::string base_name, int base_health, int base_damage, std::s
 
 void Wizard::castSpell(Player *opponent){
 attack(opponent, mana);
+damage_taken(mana);
+std::cout << name << " casts a spell on " << opponent->getName() << " for " << damage << " damage.\n";
 };
 
 
 void Warrior::swingWeapon(Player *opponent){
 attack (opponent, getDamage());
+damage_taken(damage);
+std::cout << name << " swings their " << weapon << " at " << opponent->getName() << "!\n";
 };
