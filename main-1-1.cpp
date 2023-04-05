@@ -50,13 +50,13 @@ Warrior::Warrior(std::string base_name, int base_health, int base_damage, std::s
 
 void Wizard::castSpell(Player *opponent){
 attack(opponent, mana);
-damage_taken(mana);
-std::cout << name << " casts a spell on " << opponent->getName() << " for " << damage << " damage.\n";
+takeDamage(mana);
+std::cout << getName() << " casts a spell on " << opponent->getName() << " for " << mana << " damage.\n";
 };
 
 
 void Warrior::swingWeapon(Player *opponent){
 attack (opponent, getDamage());
-damage_taken(damage);
-std::cout << name << " swings their " << weapon << " at " << opponent->getName() << "!\n";
+takeDamage(getDamage());
+std::cout << getName() << " swings their " << weapon << " at " << opponent->getName() << "!\n";
 };
