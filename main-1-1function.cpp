@@ -1,6 +1,7 @@
 #include <iostream> 
-#include <iostream> 
 #include "player.h"
+#include "warrior.h"
+#include "wizard.h"
 
 void Player::setName(std::string input_name){
     name = input_name;  
@@ -37,4 +38,24 @@ void Player::attack(Player *opponent, int damage_output){
 
 void Player::takeDamage(int damage_taken){
     std::cout << name << " takes " << damage << " damage. Remaining health: " << health << "\n";
+};
+
+Wizard::Wizard(std::string base_name, int base_health, int base_damage, int base_mana) : Player(base_name, base_health, base_damage) {
+    mana = base_mana;
+};
+
+void Wizard::castSpell(Player *opponent){
+attack(opponent, mana);
+takeDamage(mana);
+std::cout << getName() << " casts a spell on " << opponent->getName() << " for " << mana << " damage.\n";
+};
+
+Warrior::Warrior(std::string base_name, int base_health, int base_damage, std::string base_weapon) : Player(base_name, base_health, base_damage) {
+    weapon = base_weapon;
+};
+
+void Warrior::swingWeapon(Player *opponent){
+attack (opponent, getDamage());
+takeDamage(getDamage());
+std::cout << getName() << " swings their " << weapon << " at " << opponent->getName() << "!\n";
 };

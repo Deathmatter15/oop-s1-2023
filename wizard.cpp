@@ -1,12 +1,12 @@
-#ifndef WizardFiveOFour
-#define WizardFiveOFour
-#include "Player.h"
-#include <string>
+#include <iostream> 
+#include "wizard.h"
 
-class Wizard: public Player {
-public:
-    int mana;
-    Wizard(std::string base_name, int base_health, int base_damage, int base_mana);
-    void castSpell(Player* opponent);
+Wizard::Wizard(std::string base_name, int base_health, int base_damage, int base_mana) : Player(base_name, base_health, base_damage) {
+    mana = base_mana;
 };
-#endif
+
+void Wizard::castSpell(Player *opponent){
+attack(opponent, mana);
+takeDamage(mana);
+std::cout << getName() << " casts a spell on " << opponent->getName() << " for " << mana << " damage.\n";
+};

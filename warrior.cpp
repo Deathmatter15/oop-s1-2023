@@ -1,12 +1,11 @@
-#ifndef WarriorOFiveFour
-#define WarrioeOFiveFour
-#include "Player.h"
-#include <string>
-
-class Warrior: public Player {
-public:
-    std::string weapon;
-    Warrior(std::string base_name, int base_health, int base_damage, std::string base_weapon);
-    void swingWeapon(Player* opponent);
+#include <iostream> 
+#include "warrior.h"
+Warrior::Warrior(std::string base_name, int base_health, int base_damage, std::string base_weapon) : Player(base_name, base_health, base_damage) {
+    weapon = base_weapon;
 };
-#endif
+
+void Warrior::swingWeapon(Player *opponent){
+attack (opponent, getDamage());
+takeDamage(getDamage());
+std::cout << getName() << " swings their " << weapon << " at " << opponent->getName() << "!\n";
+};
