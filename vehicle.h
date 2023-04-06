@@ -29,7 +29,12 @@ class Vehicle {
 };
 
 class Car: public Vehicle{
-    Car(int given_ID): Vehicle(int given_ID){};
+    private:
+    
+    public:
+    Car(int given_ID): Vehicle(given_ID){};
+
+    Car(): Vehicle(0){};
 
     int getParkingDuration(){
         int timeParked = 0.90 * std::difftime(std::time(nullptr),findtimeOfEntry());
@@ -38,20 +43,30 @@ class Car: public Vehicle{
 };
 
 class Bus: public Vehicle{
-    Bus(int given_ID): Vehicle(int given_ID){};
+    private:
+    
+    public:
+    Bus(int given_ID): Vehicle(given_ID){}
+
+    Bus(): Vehicle(0){};
 
     int getParkingDuration(){
         int timeParked = 0.75 * std::difftime(std::time(nullptr),findtimeOfEntry());
         return timeParked; 
-    };
+    }
 };
 
 class Motorbike: public Vehicle{
-    Motorbike(int given_ID): Vehicle(int given_ID){};
+    private:
+    
+    public:
+    Motorbike(int given_ID): Vehicle(given_ID){};
+
+    Motorbike(): Vehicle(0){};
 
     int getParkingDuration(){
         int timeParked = 0.85 * std::difftime(std::time(nullptr),findtimeOfEntry());
         return timeParked;  
-    };
+    }
 };
 #endif
