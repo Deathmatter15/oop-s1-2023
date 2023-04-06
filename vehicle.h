@@ -11,7 +11,7 @@ class Vehicle {
     int ID; 
 
     public:
-
+    
     Vehicle(int given_ID){
         ID = given_ID;
         timeOfEntry = std::time(nullptr);

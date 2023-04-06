@@ -15,8 +15,9 @@ Car *cars = new Car [vehicle_amount[0]];
 Bus *buses = new Bus [vehicle_amount[1]];
 Motorbike *motorbikes = new Motorbike [vehicle_amount[2]];
 
-for (int i=0; i<3; i++) {
+cout << cars[0].getParkingDuration() << endl;
 
-};
+delete cars, buses, motorbikes;
+
 return 0;
 }
