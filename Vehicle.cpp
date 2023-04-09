@@ -21,6 +21,6 @@ int Vehicle::findID(){
 }
 
 int Vehicle::getParkingDuration(){
-int timeParked = std::difftime(std::time(nullptr),findtimeOfEntry()) + 1;
+int timeParked = std::difftime(std::time(nullptr),findtimeOfEntry());
 return timeParked; 
 }
