@@ -24,7 +24,7 @@ int Vehicle::getParkingDuration(){
 int timeParked = std::difftime(std::time(nullptr),findtimeOfEntry());
 if (timeParked > 2) {
 return timeParked;
-} else {
+} else if (timeParked <= 2){
 return 0.85 * timeParked;
-}    
+}
 } 
