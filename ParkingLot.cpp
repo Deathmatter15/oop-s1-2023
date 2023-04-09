@@ -49,8 +49,8 @@ void ParkingLot::unparkVehicle(int target_ID){
 int ParkingLot::countOverstayingVehicles(int maxParkingDuration) {
 int overstay_counter = 0; //Variable to store the number of overstaying cars 
 for (int i=0; i<getCount(); i++){
-    if (vehicles[i].getParkingDuration() >= maxParkingDuration){
-        overstay_counter = 3;
+    if (vehicles[i].getParkingDuration() > maxParkingDuration){
+        overstay_counter++;
     }
 }
 return overstay_counter;
