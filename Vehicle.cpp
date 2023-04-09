@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Vehicle.h"
-#include "ParkingLot.h"
+
 Vehicle::Vehicle(){
     ID = 0;
     timeOfEntry = std::time(nullptr);
