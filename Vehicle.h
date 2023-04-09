@@ -19,6 +19,7 @@ class Vehicle {
     
     
     int findID();
-
+    
+    int getParkingDuration();
 };
 #endif
