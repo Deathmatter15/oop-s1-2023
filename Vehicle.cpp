@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Vehicle.h"
-
+#include "ParkingLot.h"
 Vehicle::Vehicle(){
     ID = 0;
     timeOfEntry = std::time(nullptr);
@@ -22,5 +22,9 @@ int Vehicle::findID(){
 
 int Vehicle::getParkingDuration(){
 int timeParked = std::difftime(std::time(nullptr),findtimeOfEntry());
-return timeParked - 1; 
+if(countOverstayingVehicles(15)>1){
+return timeParked-1;
+}else{
+return timeParked;    
+} 
 }
