@@ -22,9 +22,5 @@ int Vehicle::findID(){
 
 int Vehicle::getParkingDuration(){
 int timeParked = std::difftime(std::time(nullptr),findtimeOfEntry());
-if(countOverstayingVehicles(15)>1){
-return timeParked-1;
-}else{
 return timeParked;    
 } 
-}
