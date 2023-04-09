@@ -25,6 +25,6 @@ int timeParked = std::difftime(std::time(nullptr),findtimeOfEntry());
 if (timeParked >= 2.9){
 return timeParked;
 } else if (timeParked < 2.9){
-return timeParked;
+return 0.85 * timeParked;
 }
 } 
