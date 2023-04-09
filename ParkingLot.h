@@ -21,5 +21,6 @@ void parkVehicle(Vehicle* new_parking_vehicle);
     
 void unparkVehicle(int target_ID);
 
+int countOverstayingVehicles (int maxParkingDuration);
 };
 #endif
