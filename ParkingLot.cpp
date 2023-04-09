@@ -38,6 +38,6 @@ void ParkingLot::unparkVehicle(int target_ID){
             return;
         }
     }
-    std::cout << "Vehicle is not in the lot" << std::endl;
+    std::cout << "Vehicle is not in the lot\n";
     return;
 }
