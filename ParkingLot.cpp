@@ -4,7 +4,7 @@
 ParkingLot::ParkingLot(){
     max_parking_capacity = 0;
     vehicles_count = 0;
-    vehicles = new Vehicle[0]
+    vehicles = new Vehicle[0];
 }
 
 ParkingLot::ParkingLot(int carpark_capacity){
