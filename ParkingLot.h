@@ -17,7 +17,7 @@ ParkingLot(int carpark_capacity);
 
 int getCount();
 
-void parkVehicle(Vehicle new_parking_vehicle);
+void parkVehicle(Vehicle* new_parking_vehicle);
     
 void unparkVehicle(int target_ID);
 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Vehicle.h"
 #include "ParkingLot.h"
 
 ParkingLot::ParkingLot(){
@@ -17,10 +18,10 @@ int ParkingLot::getCount(){
     return(vehicles_count);
 }
 
-void ParkingLot::parkVehicle(Vehicle new_parking_vehicle){
+void ParkingLot::parkVehicle(Vehicle* new_parking_vehicle){
     
     if (getCount() < max_parking_capacity){
-        vehicles[vehicles_count] = new_parking_vehicle;
+        vehicles[vehicles_count] = *new_parking_vehicle;
         vehicles_count++;
     }else if(vehicles_count > max_parking_capacity){
         std::cout << "The lot is full" << std::endl;
