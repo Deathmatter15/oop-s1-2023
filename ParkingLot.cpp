@@ -8,14 +8,14 @@ ParkingLot::ParkingLot(){
 
 ParkingLot::ParkingLot(int carpark_capacity){
     max_parking_capacity = carpark_capacity;
-    vehicles = new Vehicle[carpark_capacity];
+    vehicles = new Vehicle*[carpark_capacity];
 }
   
 int ParkingLot::getCount(){
     return(vehicles_count);
 }
 
-void ParkingLot::parkVehicle(Vehicle new_parking_vehicle){
+void ParkingLot::parkVehicle(Vehicle* new_parking_vehicle){
     
     if (getCount() < max_parking_capacity){
         vehicles[vehicles_count] = new_parking_vehicle;
