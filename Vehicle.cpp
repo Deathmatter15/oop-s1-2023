@@ -22,9 +22,9 @@ int Vehicle::findID(){
 
 int Vehicle::getParkingDuration(){
 int timeParked = std::difftime(std::time(nullptr),findtimeOfEntry());
-if (timeParked > 3) {
-return timeParked;
-} else if (timeParked < 3){
+if if (timeParked <= 3){
 return 0.85 * timeParked;
+} else if (timeParked > 3){
+return timeParked;
 }
 } 
