@@ -7,13 +7,13 @@ Appliance::Appliance() {
     return; 
 }
 
-Appliance::Appliance(int powerRating) {
-    powerRating = powerRating;
+Appliance::Appliance(int Rating) {
+    powerRating = Rating;
     isOn = false;
     return;
 }
-void Appliance::set_powerRating(int powerRating) {
-    powerRating = powerRating;
+void Appliance::set_powerRating(int Rating) {
+    powerRating = Rating;
     return;
 }
 int Appliance::get_powerRating() {

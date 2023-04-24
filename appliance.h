@@ -3,7 +3,7 @@
 
 class Appliance {
 
-private:
+private: // protect if you want child to inherit values.
 int powerRating;
 bool isOn;
 
