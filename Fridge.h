@@ -1,6 +1,6 @@
 #ifndef FridgeTwentyFour
 #define FridgeTwentyFour
-#include "appliance.h"
+#include "Appliance.h"
     class Fridge: public Appliance {
         private:
         int powerRating;

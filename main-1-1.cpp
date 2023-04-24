@@ -1,5 +1,5 @@
 #include <iostream> 
-#include "appliance.h"
+#include "Appliance.h"
 using namespace std;
 
 int main(){
