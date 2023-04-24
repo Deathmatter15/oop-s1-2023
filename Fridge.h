@@ -11,8 +11,6 @@
         Fridge();
         Fridge(int powerRating, double volume);
 
-        double volume; // volume in litres
-
         void set_Volume(double input_volume);
         double get_Volume();
 
