@@ -1,6 +1,6 @@
 #include <iostream> 
+#include "Fridge.h"
 
-void functionName(){
-    
-return; 
+Fridge::Fridge(): Appliance::Appliance() {
+    volume = 0;
 }
