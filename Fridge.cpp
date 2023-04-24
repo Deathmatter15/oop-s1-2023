@@ -10,11 +10,11 @@ Fridge::Fridge(int input_powerRating, double input_vol) {
     volume = input_vol;
 } 
 
-void Fridge::set_Volume(double input_vol) {
+void Fridge::setVolume(double input_vol) {
     volume = input_vol;
 }
 
-double Fridge::get_Volume() {
+double Fridge::getVolume() {
     return volume; 
 }
 
