@@ -1,4 +1,4 @@
-#include "appliance.h"
+#include "Appliance.h"
 #include <iostream> 
 
 Appliance::Appliance() {
