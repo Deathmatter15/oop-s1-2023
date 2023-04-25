@@ -12,8 +12,6 @@
     TV();
     TV(int powerRating, double screenSize);
 
-    double screenSize; // screen size in inches
-
     void setScreenSize(double screenSize);
     double getScreenSize();
 
