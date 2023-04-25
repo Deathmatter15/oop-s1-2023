@@ -15,5 +15,5 @@ class TV: public Appliance {
     double getScreenSize();
 
     double getPowerConsumption();
-}
+};
 #endif
