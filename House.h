@@ -13,7 +13,7 @@
         House();
         House(int input_numAppliances);
         bool addAppliance(Appliance* appliance);
-        double getTotalPowerConsumpton();
+        double getTotalPowerConsumption();
 
     };
 #endif 
