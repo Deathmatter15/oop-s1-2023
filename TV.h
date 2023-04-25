@@ -1,8 +1,7 @@
 #ifndef TVTwentyFour
 #define TVTwentyFour
 #include "Appliance.h"
-    class TV : public Appliance {
-
+class TV: public Appliance {
     private:
     int  powerRating;
     bool isOn;
@@ -16,5 +15,5 @@
     double getScreenSize();
 
     double getPowerConsumption();
-    }
+}
 #endif
