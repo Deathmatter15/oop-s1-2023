@@ -35,7 +35,3 @@ void Appliance::turnOff() {
 double Appliance::getPowerConsumption(){
     return 0;
 }
-
-Appliance::~Appliance(){
-    
-}

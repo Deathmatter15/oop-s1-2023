@@ -19,7 +19,6 @@ bool get_isOn();
 void turnOn();
 void turnOff();
 virtual double getPowerConsumption();
-~Appliance();
 };
 
 #endif
