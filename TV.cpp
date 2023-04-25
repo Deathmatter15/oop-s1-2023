@@ -1,7 +1,7 @@
 #include <iostream> 
 #include "TV.h"
 
-    TV::TV() : Appliance:Appliance() {
+    TV::TV() : Appliance::Appliance() {
         screenSize = 0;
     }
     TV::TV(int input_powerRating, double input_screenSize) {
