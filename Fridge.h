@@ -14,6 +14,6 @@
         void setVolume(double input_volume);
         double getVolume();
 
-        double getPowerConsumption();
+        double getPowerConsumption() override;
     };
 #endif

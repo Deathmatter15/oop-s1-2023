@@ -19,5 +19,5 @@ double Fridge::getVolume() {
 }
 
 double Fridge::getPowerConsumption(){
-return powerRating*24 *(volume/100);
+return powerRating*24*(volume/100);
 }

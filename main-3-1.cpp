@@ -15,4 +15,12 @@ cout << "Checkpoint 1" << endl;
 cout << Hans->addAppliance(Coppenhein) << endl;
 cout << Hans->addAppliance(Benq) << endl;
 cout << Hans->addAppliance(Base) << endl;
+
+cout << Hans->getTotalPowerConsumption()<< endl;
+
+delete Coppenhein;
+delete Benq;
+delete Base;
+
+return 0;
 }
