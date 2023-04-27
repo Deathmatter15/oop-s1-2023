@@ -39,11 +39,11 @@
     void Ford::drive(int kms) {
         float kms_driven = kms;
         if (litresOfFuel > kms/5){
-            emissions = 74*kms_driven;
+            emissions = 234*kms_driven;
             litresOfFuel -= kms_driven/5;
         } else if (litresOfFuel <= kms/5) {
             kms_driven = litresOfFuel*5;
-            emissions = 74*kms_driven;
+            emissions = 234*kms_driven;
             litresOfFuel = 0;
         }
     }
