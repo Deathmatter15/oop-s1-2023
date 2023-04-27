@@ -43,12 +43,12 @@ void Tesla::chargeBattery(int mins) {
 
 void Tesla::drive(int kms){
     float kms_driven = kms;
-    if (batteryPercentage < kms/5) {
+    if (batteryPercentage =< kms/5) {
         kms_driven = batteryPercentage*5;
         emissions = 74*kms_driven;
         batteryPercentage = 0;
     }else if (batteryPercentage > kms/5) {
-        emissions = 74*kms;
+        emissions = 74*kms_driven;
         batteryPercentage -= kms_driven/5;
     }
 }
