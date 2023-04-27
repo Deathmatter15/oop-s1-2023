@@ -7,7 +7,7 @@ Tesla::Tesla(): Car::Car() {
 Tesla::Tesla(char input_model, int input_price) {
     price = input_price;
     emissions = 0;
-
+    
     model = input_model;
     batteryPercentage = 100;
 }
@@ -20,7 +20,7 @@ char Tesla::get_model() {
 }  
 
 void Tesla::set_batteryPercentage(float input_percentage){
-    if((input_percentage <= 100) && (input_percentage >=0)){
+    if((input_percentage <= 100) && (input_percentage >= 0)){
         batteryPercentage = input_percentage;
     }
     else if (input_percentage < 0) {
