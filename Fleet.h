@@ -1,6 +1,9 @@
 #ifndef FleetTwentySeven
 #define FleetTwentySeven
     #include "Car.h"
+    #include "Tesla.h"
+    #include "Ford.h"
+
     class Fleet {
         private:
         Car** fleet; 
