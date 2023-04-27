@@ -42,7 +42,7 @@
             emissions = 234*kms_driven;
             litresOfFuel -= kms_driven/5;
         } else if (litresOfFuel <= kms/5) {
-            kms_driven = litresOfFuel*5;
+            kms_driven = (litresOfFuel+8)*5;
             emissions = 234*kms_driven;
             litresOfFuel = 0;
         }
