@@ -1,7 +1,4 @@
 #include <iostream> 
-#include "Car.h"
-#include "Tesla.h"
-#include "Ford.h"
 #include "Fleet.h"
 
 Fleet::Fleet(){
