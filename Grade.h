@@ -3,12 +3,12 @@
 #include <string>
     class Grade { 
         private: 
-        int course_id; 
-        int student_id;
         std::string assignment; 
         int value; 
+        int student_id;
         
         public:
-        
+        Grade();
+        Grade(std::string new_assignment, int new_value, int new_student_id);
         };
 #endif

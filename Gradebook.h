@@ -5,12 +5,12 @@
     class Gradebook { 
         private: 
         int student_id; 
-        int course_id; 
-        std::string assignment; 
-        int value
+        int course_id;
         Grade* grade; 
 
         public:
-        void addGrade(int newstudent_id, int newcourse_id, Grade* new_grade);
+        Gradebook();
+        void addGrade(int newstudent_id, int newcourse_id, std::string new_assignment, int new_value);
+        ~Gradebook(); 
         };
 #endif

@@ -3,10 +3,11 @@
 #include <string>
     class Course {
         private: Person** persons; 
-        int course_id; 
+        int student_id; 
         std::string name;
         
         public: 
+        Course();
         void addPerson(Person* new_Register);
         };
 #endif
