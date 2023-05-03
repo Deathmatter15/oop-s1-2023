@@ -1,24 +1,30 @@
 #include <iostream>
-#include "Person.h"
+#include "University.h"
 #include "Student.h"
-#include "Course.h"
 #include "Gradebook.h"
 #include "Grade.h"
 
 University::University(){
-    name = "N/A"
-    location = "N/A"
-    course = new Course[1];
-    gradebook = new Gradebook[1]
+    name = "N/A";
+    location = "N/A";
+
 }
 
 University::University(std::string register_name, std::string register_location){
     name = register_name;
-    location = regiser_location;
-    course = new Course[1];
-
-    gradebook = new Gradebook[1]
-    gradebook->addGrade(0, 0, "N/A", 0);
+    location = register_location;
+    
 }
-void addCourse(int id, std::string name){}
-void addGradebook(Gradebook* new_gradebook)
+
+void University::addCourse(int new_course_id, std::string new_name){
+    course = new Course(new_course_id, new_name);
+}
+
+void University::addPerson(Person* new_Register){
+    course->addPerson(new_Register);
+}
+
+University::~University(){
+    delete course;
+    std::cout << "Uni course has been deleted" << std::endl;
+}

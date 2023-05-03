@@ -1,9 +1,10 @@
 #ifndef UniFifteen
 #define UniFifteen
 #include <string>
+#include "Course.h"
+#include "Person.h"
     class University { 
         private: 
-        Gradebook* gradebook;
         Course* course; 
         std::string name; 
         std::string location;
@@ -12,6 +13,9 @@
         University();
         University(std::string register_name, std::string regiser_location);
         void addCourse(int id, std::string name);
-        void addGradebook(Gradebook* new_gradebook);
+        Course* getCourse();
+        void addPerson(Person* new_Register);
+        ~University();
+        
         };
 #endif

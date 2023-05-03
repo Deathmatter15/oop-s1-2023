@@ -11,18 +11,16 @@ int main(){
 University* Adelaide = new University[1];
 
 //Add a Course to Uni
-Course* COOP = new Course[1];
-Adeliade->addCourse(int course_id, std::string name);
+Adelaide->addCourse(111, "Chess");
 
 //Add a student to a Course 
-Student* Smuck = new Student[1];
-COOP->addPerson(Person* Smuck);
+Student* Smuck = new Student("John Cena", 101);
+Adelaide->addPerson(Smuck);
 
 //Add a grade 
-Grade* Workshop1 = new Grade[1];
-Gradebook* GradesSmuck = new Gradebook[1];
-GradesSmuck-> addGrade(Smuck->getStudentId(), COOP->getCourseId(), Workshop1);
-Adelaide->addGradebook(GradesSmuck);
+Gradebook* Chess = new Gradebook[1]; 
+Chess->addGrade(101,111,"Bongcloud Opening", 0);
 
+delete[] Adelaide; 
 return 0;
 }
