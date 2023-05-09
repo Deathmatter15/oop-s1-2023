@@ -1,15 +1,15 @@
-#include <iostream>
+
 #include "Invoice.h"
 
-    void Invoice::Invoice(int set_invoiceId){
+    Invoice::Invoice(std::string set_invoiceId){
         invoiceId = set_invoiceId;
         dollarsOwed = 0;
         return;
     }
 
-    void addServiceCost(int costDollars){
+    void Invoice::addServiceCost(int costDollars){
         if(costDollars >= 0){
-            dollarsOwed += costDollars
+            dollarsOwed += costDollars;
             return;
         }else if(costDollars < 0){
             std::cout << "Invoice does not accept Negative Values" << std::endl;
@@ -17,10 +17,11 @@
         }
     }
         
-    int getDollarsOwed(){
+    int Invoice::getDollarsOwed(){
         std::cout << "You owe " << dollarsOwed << " dollars" << std::endl;
+        return dollarsOwed;
     }
 
-    int getInvoiceId(){
+    std::string Invoice::getInvoiceId(){
         return invoiceId;
     }

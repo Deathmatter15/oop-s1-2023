@@ -1,20 +1,18 @@
 #ifndef InvoiceTenFive
 #define InvoiceTenFive
-
+#include <iostream>
+#include <string>
 class Invoice{
         //Represents billing Invoice to sum total amount owed for services
 private:
-    int invoiceId;
+    std::string invoiceId;
     int dollarsOwed;
 
 public:
 
-    void Invoice(int set_invoiceId){};
-
-    void addServiceCost(int costDollars){};
-        
-    int getDollarsOwed(){};
-
-    int getInvoiceId(){};
+    Invoice(std::string set_invoiceId);
+    void addServiceCost(int costDollars);  
+    int getDollarsOwed();
+    std::string getInvoiceId();
 };
 #endif
