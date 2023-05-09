@@ -1,5 +1,5 @@
-#ifndef someNameHere
-#define someNameHere
+#ifndef UnitTestTenFive
+#define UnitTestTenFive
 #include <iostream>
 #include "Addition.h"
 
