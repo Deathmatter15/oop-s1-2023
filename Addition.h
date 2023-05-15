@@ -1,5 +1,5 @@
-#ifndef someNameHere
-#define someNameHere
+#ifndef AdditionTenFive
+#define AdditionTenFive
     class Addition {
     public:
         int add(int lhs, int rhs) {
