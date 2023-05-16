@@ -5,8 +5,7 @@
 using namespace std;
     class USBConnection {
         private:
-        static std::stack<int> ids({3, 2, 1};);
-
+        static std::stack<int> ids;
         std::stack<int> ID;
         
         USBConnection(){
@@ -31,4 +30,6 @@ using namespace std;
 
         ~USBConnection(){if(ID.size() > 0) {ids.push(ID.top());} };
     };
+
+std::stack<int> USBConnection::ids({3, 2, 1});
 #endif
