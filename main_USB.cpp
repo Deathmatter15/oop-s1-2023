@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<max_usb_ports;i++){
         c[i] = USBConnection::CreateUsbConnection();
         if (c[i] != nullptr){
-            cout << "USB connection with ID =" << c[i]->get_id() << " was created\n";
+            cout << "USB connection with ID = " << c[i]->get_id() << " was created\n";
         }else{
             cout << "no more USB ports available\n";
         }
