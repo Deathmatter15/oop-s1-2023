@@ -1,5 +1,5 @@
-#ifndef USBConnection_H
-#define USBConnection_H
+#ifndef USBConnection_H1
+#define USBConnection_H1
 #include <iostream>
 #include <stack>
 using namespace std;
