@@ -1,7 +1,7 @@
 #include "GameEntity.h"
 
 GameEntity::GameEntity(int x, int y, char input_type){
-    position = make_tuple(x, y);
+    position = std::make_tuple(x, y);
     type = input_type;
 }
 
