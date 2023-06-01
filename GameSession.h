@@ -36,12 +36,12 @@
             void gameCycle(int maxCycles, double obstacleActivationDistance){
                 for (int i=0; i<maxCycles; i++){
                     for (int i = 0; i< numAvatar; i++){
-                        dynamic_cast<Avatar*>(grid.at(i))-> shift(1,0);
+                        &grid.at(i)-> shift(1,0);
                         std::tuple<int,int> pos1 = grid.at(i)->getCoordinates();
                         for (int j = numAvatar; j<numAvatar+numObstacle-2; j++){
                             std::tuple<int,int> pos2 = grid.at(j)->getCoordinates();
                         if(Helper::calculateDistance(pos1, pos2) <= obstacleActivationDistance){
-                            dynamic_cast<Obstacle*>(grid.at(j))->apply(grid.at(i));
+                            &grid.at(j)->apply(grid.at(i));
                         }
                         }
                     }
