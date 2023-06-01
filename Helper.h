@@ -9,6 +9,7 @@ class Helper {
     static std::tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight){
         int xCoordinate = rand()%(gridWidth+1);
         int yCoordinate = rand()%(gridHeight+1);
+        if(xCoordinate ==1){xCoordinate = 0;}
         return std::make_tuple(xCoordinate, yCoordinate);
     };
 

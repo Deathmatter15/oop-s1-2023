@@ -20,7 +20,7 @@
             void initGameSession(int numAvatars, int numObstacles, int gridWidth, int gridHeight){
                 for(int i=0; i<numAvatars; i++){
                     std::tuple<int,int> randomCoordinate = Helper::generateRandomCoordinates(gridWidth,gridHeight);
-                    grid.push_back( new Avatar(std::get<0>(randomCoordinate), std::get<1>(randomCoordinate)) );
+                    grid.push_back(new Avatar(std::get<0>(randomCoordinate), std::get<1>(randomCoordinate)) );
                 }
 
                 for(int i=0; i<numObstacles; i++){
@@ -36,13 +36,11 @@
             void gameCycle(int maxCycles, double obstacleActivationDistance){
                 for (int i=0; i<maxCycles; i++){
                     for (int i = 0; i< numAvatar; i++){
-                        grid.at(i) = dynamic_cast<Avatar*>(&grid.at(i));
-                        grid.at(i)-> shift(1,0);
+                        dynamic_cast<Avatar*>(&grid.at(i))-> shift(1,0);
                         std::tuple<int,int> pos1 = grid.at(i)->getCoordinates();
                         for (int j = numAvatar; j<numAvatar+numObstacle-2; j++){
                             std::tuple<int,int> pos2 = grid.at(j)->getCoordinates();
                         if(Helper::calculateDistance(pos1, pos2) <= obstacleActivationDistance){
-                            grid.at(j) = dynamic_cast<Obstacle*>(&grid.at(j));
                             grid.at(j)->apply(grid.at(i));
                         }
                         }
