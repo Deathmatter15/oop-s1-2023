@@ -6,11 +6,10 @@
 #include <cmath>
 class Helper {
     public:
-    static std::tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight) {
+    static std::tuple<int, int> generateRandomCoordinates(int gridWidth, int gridHeight){
         int xCoordinate = rand()%(gridWidth+1);
-        int yCoordinate = rand()%(gridHeight+1); 
-        std::tuple <int,int> randomCoordinate = std::make_tuple(xCoordinate, yCoordinate);
-        return randomCoordinate;
+        int yCoordinate = rand()%(gridHeight+1);
+        return std::make_tuple(xCoordinate, yCoordinate)
     };
 
     static double calculateDistance(std::tuple<int,int> coord1, std::tuple<int,int> coord2){
