@@ -19,7 +19,10 @@ class Obstacle: public GridUnit, public Modifier{
         return false;
     }
 
-    void apply()
+    void apply(GridUnit& unit){
+        unit.setEntity('O');
+        active = false;
+    };
 };
 
 #endif
