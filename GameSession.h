@@ -12,6 +12,7 @@
             int numAvatar;
             int numObstacle;
             int gridWidthSet;
+        
         public:
             std::vector<GridUnit*>& getGrid(){
                 return grid;
@@ -38,18 +39,19 @@
                     for (int i = 0; i< numAvatar; i++){
                         Avatar* avatarPtr = dynamic_cast<Avatar*>(grid.at(i));
                         if(avatarPtr){
-                        avatarPtr->shift(1,0);
+                            avatarPtr->shift(1,0);
                         }
                         std::tuple<int,int> pos1 = grid.at(i)->getCoordinates();
+                        
                         for (int j = numAvatar; j<numAvatar+numObstacle-2; j++){
                             std::tuple<int,int> pos2 = grid.at(j)->getCoordinates();
-                        if(Helper::calculateDistance(pos1, pos2) <= obstacleActivationDistance){
-                        Obstacle* obstaclePtr = dynamic_cast<Obstacle*>(grid.at(j));
-                            if(obstaclePtr){
-                                obstaclePtr->apply(grid.at(i));
+                            if(Helper::calculateDistance(pos1, pos2) <= obstacleActivationDistance){
+                                Obstacle* obstaclePtr = dynamic_cast<Obstacle*>(grid.at(j)); //How to correctly Dynamically Cast
+                                if(obstaclePtr){
+                                    obstaclePtr->apply(*grid.at(i)); //How to correctly call &object from a vector pointer)
                                 }
                             
-                        }
+                            }
                         }
                     }
 

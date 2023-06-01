@@ -32,6 +32,8 @@ class GridUnit {
     void setEntity(char entity){
         Entity = entity;
     }
+
+    virtual ~GridUnit(){}; //Dynamic Deconstructor to allow dynamic_cast to properly function;
 };
 
 #endif
