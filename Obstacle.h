@@ -3,5 +3,8 @@
 #include "GridUnit.h"
 #include "Modifier.h"
 
+class Obstacle{
+    
+}
 
 #endif
