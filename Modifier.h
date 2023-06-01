@@ -4,7 +4,7 @@
 
     class Modifier {
         public:
-        virtual void apply(GridUnit& unit);
+        virtual void apply(GridUnit& unit){};
     };
 
 #endif
